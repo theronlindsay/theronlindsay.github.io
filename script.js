@@ -64,6 +64,31 @@ skillHeaders.forEach(header => {
   });
 });
 
+// Education dropdown functionality
+const educationHeaders = document.querySelectorAll('.education-card-header');
+
+educationHeaders.forEach(header => {
+  header.addEventListener('click', () => {
+    const educationId = header.getAttribute('data-skill');
+    const educationContent = document.getElementById(educationId);
+    const dropdownArrow = header.querySelector('.dropdown-arrow');
+    
+    // Toggle active states
+    header.classList.toggle('active');
+    educationContent.classList.toggle('active');
+    
+    // Close other dropdowns (optional - uncomment for accordion behavior)
+    // educationHeaders.forEach(otherHeader => {
+    //   if (otherHeader !== header) {
+    //     const otherEducationId = otherHeader.getAttribute('data-skill');
+    //     const otherEducationContent = document.getElementById(otherEducationId);
+    //     otherHeader.classList.remove('active');
+    //     otherEducationContent.classList.remove('active');
+    //   }
+    // });
+  });
+});
+
 // Video player functionality for portfolio cards
 const videoToggleBtns = document.querySelectorAll('.video-toggle-btn');
 const videoCloseBtns = document.querySelectorAll('.video-close-btn');

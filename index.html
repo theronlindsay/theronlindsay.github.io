@@ -42,6 +42,9 @@
           <a href="#skills" class="nav-links">Skills</a>
         </li>
         <li class="nav-item">
+          <a href="#education" class="nav-links">Education</a>
+        </li>
+        <li class="nav-item">
           <a href="#portfolio" class="nav-links">Portfolio</a>
         </li>
       </ul>
@@ -64,12 +67,14 @@
           <a href="https://www.linkedin.com/in/theronl/" 
              style="font-size: 3em; color: white;" 
              class="social-link fa-brands fa-linkedin"
-             aria-label="LinkedIn Profile">
+             aria-label="LinkedIn Profile"
+             target="_blank">
           </a>
           <a href="https://github.com/theronlindsay" 
              style="font-size: 3em; color: white;" 
              class="social-link"
-             aria-label="GitHub Profile">
+             aria-label="GitHub Profile"
+             target="_blank">
             <span class="fa-brands fa-github"></span>
           </a>
         </div>
@@ -83,7 +88,9 @@
            and software engineering principles.</p>
       </div>
     </div>
-    <!-- Skills Section -->
+
+    <div class="horizontal-layout">
+      <!-- Skills Section -->
     <div id="skills" class="skills-section content-section">
       <h2>Skills</h2>
       <div class="columns-container">
@@ -179,71 +186,157 @@
 
           <!-- Web Development -->
           <div class="skill-dropdown">
-            <div class="skill-header" data-skill="web-dev">
-              <i class="fa-solid fa-code skill-icon"></i>
-              <h3>Web Development</h3>
-              <i class="fa-solid fa-chevron-down dropdown-arrow"></i>
-            </div>
-            <div class="skill-content" id="web-dev">
-              <div class="skill-description">
-                <p>Full-stack web development experience building responsive and interactive web applications.</p>
+              <div class="skill-header" data-skill="web-dev">
+                <i class="fa-solid fa-code skill-icon"></i>
+                <h3>Web Development</h3>
+                <i class="fa-solid fa-chevron-down dropdown-arrow"></i>
               </div>
+              <div class="skill-content" id="web-dev">
+                <div class="skill-description">
+                  <p>Full-stack web development experience building responsive and interactive web applications.</p>
+                </div>
+                <div class="skill-technologies">
+                  <span class="tech-tag">HTML</span>
+                  <span class="tech-tag">CSS</span>
+                  <span class="tech-tag">JavaScript</span>
+                  <span class="tech-tag">React</span>
+                  <span class="tech-tag">Svelte</span>
+                  <span class="tech-tag">Node.js</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Database Management -->
+            <div class="skill-dropdown">
+              <div class="skill-header" data-skill="database">
+                <i class="fa-solid fa-database skill-icon"></i>
+                <h3>Database Management</h3>
+                <i class="fa-solid fa-chevron-down dropdown-arrow"></i>
+              </div>
+              <div class="skill-content" id="database">
+                <div class="skill-description">
+                  <p>Database design and integration experience with focus on CRUD operations and API development.</p>
+                </div>
+                <div class="skill-technologies">
+                  <span class="tech-tag">MySQL</span>
+                  <span class="tech-tag">PHP</span>
+                  <span class="tech-tag">REST APIs</span>
+                  <span class="tech-tag">Database Design</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Mobile Development -->
+            <div class="skill-dropdown">
+              <div class="skill-header" data-skill="mobile-dev">
+                <i class="fa-solid fa-mobile-screen-button skill-icon"></i>
+                <h3>Mobile Development</h3>
+                <i class="fa-solid fa-chevron-down dropdown-arrow"></i>
+              </div>
+              <div class="skill-content" id="mobile-dev">
+                <div class="skill-description">
+                  <p>Native iOS application development with modern UI frameworks and best practices.</p>
+                </div>
+                <div class="skill-technologies">
+                  <span class="tech-tag">Swift</span>
+                  <span class="tech-tag">SwiftUI</span>
+                  <span class="tech-tag">Xcode</span>
+                  <span class="tech-tag">iOS SDK</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+        
+
+      </div>
+
+    <!-- Education Section -->
+    <div id="education" class="education-section-wrapper content-section">
+      <h2>Education</h2>
+      <div class="education-container">
+
+        <!-- Education Card 1 -->
+        <div class="education-card">
+          <div class="education-card-header" data-skill="education-1">
+            <img src="https://logos-world.net/wp-content/uploads/2020/06/Boise-State-Broncos-Logo.png" class="portfolio-card-image">
+            <h3>Boise State University</h3>
+            <i class="fa-solid fa-chevron-down dropdown-arrow"></i>
+          </div>
+          <div class="education-card-content" id="education-1">
+            <div class="education-info">
+              <p><strong>Major:</strong> Games, Interactive Media, and Mobile Technologies</p>
+              <p><strong>Dates:</strong> 2024 - 2026</p>
+            </div>
+            <div class="education-skills">
+              <p><strong>Skills Learned:</strong></p>
               <div class="skill-technologies">
-                <span class="tech-tag">HTML</span>
-                <span class="tech-tag">CSS</span>
-                <span class="tech-tag">JavaScript</span>
-                <span class="tech-tag">React</span>
-                <span class="tech-tag">Svelte</span>
-                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">Game Development</span>
+                <span class="tech-tag">UI/UX Design</span>
+                <span class="tech-tag">Mobile Development</span>
+                <span class="tech-tag">Web Development</span>
+                <span class="tech-tag">3D Modeling</span>
               </div>
             </div>
           </div>
+        </div>
 
-          <!-- Database Management -->
-          <div class="skill-dropdown">
-            <div class="skill-header" data-skill="database">
-              <i class="fa-solid fa-database skill-icon"></i>
-              <h3>Database Management</h3>
-              <i class="fa-solid fa-chevron-down dropdown-arrow"></i>
+        <!-- Education Card 2 -->
+        <div class="education-card">
+          <div class="education-card-header" data-skill="education-2">
+            <img src="https://cdn.freelogovectors.net/wp-content/uploads/2023/06/university-of_idaho_logo-freelogovectors.net_.png" class="portfolio-card-image">
+            <h3>University of Idaho</h3>
+            <i class="fa-solid fa-chevron-down dropdown-arrow"></i>
+          </div>
+          <div class="education-card-content" id="education-2">
+            <div class="education-info">
+              <p><strong>Major:</strong> Computer Science</p>
+              <p><strong>Dates:</strong> 2022 - 2023</p>
             </div>
-            <div class="skill-content" id="database">
-              <div class="skill-description">
-                <p>Database design and integration experience with focus on CRUD operations and API development.</p>
-              </div>
+            <div class="education-skills">
+              <p><strong>Skills Learned:</strong></p>
               <div class="skill-technologies">
-                <span class="tech-tag">MySQL</span>
-                <span class="tech-tag">PHP</span>
-                <span class="tech-tag">REST APIs</span>
-                <span class="tech-tag">Database Design</span>
+                <span class="tech-tag">Data Stuctures</span>
+                <span class="tech-tag">C/C++ Programing</span>
+                <span class="tech-tag">Git</span>
+                <span class="tech-tag">Shell Scripting</span>
               </div>
             </div>
           </div>
+        </div>
 
-          <!-- Mobile Development -->
-          <div class="skill-dropdown">
-            <div class="skill-header" data-skill="mobile-dev">
-              <i class="fa-solid fa-mobile-screen-button skill-icon"></i>
-              <h3>Mobile Development</h3>
-              <i class="fa-solid fa-chevron-down dropdown-arrow"></i>
+        <!-- Education Card 3 -->
+        <div class="education-card">
+          <div class="education-card-header" data-skill="education-3">
+            <img src="https://styles.redditmedia.com/t5_azaq5f/styles/communityIcon_vurodgulvhoc1.png" class="portfolio-card-image">
+            <h3>Global Career Accelerator</h3>
+            <i class="fa-solid fa-chevron-down dropdown-arrow"></i>
+          </div>
+          <div class="education-card-content" id="education-3">
+            <div class="education-info">
+              <p><strong>Focus:</strong> Web Development and Professional Skills</p>
+              <p><strong>Dates:</strong> Summer 2024</p>
             </div>
-            <div class="skill-content" id="mobile-dev">
-              <div class="skill-description">
-                <p>Native iOS application development with modern UI frameworks and best practices.</p>
-              </div>
+            <div class="education-skills">
+              <p><strong>Skills Learned:</strong></p>
               <div class="skill-technologies">
-                <span class="tech-tag">Swift</span>
-                <span class="tech-tag">SwiftUI</span>
-                <span class="tech-tag">Xcode</span>
-                <span class="tech-tag">iOS SDK</span>
+                <span class="tech-tag">Full-stack Web Application Programming</span>
+                <span class="tech-tag">OpenAI API Integrations</span>
+                <span class="tech-tag">Cloudflare Authentication</span>
+                <span class="tech-tag">Brand-sponsored sample projects</span>
               </div>
             </div>
           </div>
-
         </div>
 
       </div>
     </div>
+    </div>
+
     
+    </div>
   </div> <!-- End hero-section -->
 
   <!-- Portfolio Section -->
