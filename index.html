@@ -52,7 +52,7 @@
   <div class="hero-section">
     
     <!-- About Me Section -->
-    <section id="biography" class="content-section">
+    <div id="biography" class="content-section">
       <div class="bio-container" id="bio-container">
         <h2>About Me</h2>
         <img src="https://p7h2gynp3b.ufs.sh/f/QwfPGNjwO1pr63NdtIQdfia7wAZ0c3MUy2XWg5xJrPejVuR1" alt="Theron Lindsay Profile Picture" class="bio-image">
@@ -75,11 +75,16 @@
         </div>
 
         <!-- Bio Text -->
-        <p>I'm Theron Lindsay, I'm a senior at Boise State Studying Games, Interactive Media, and Mobile Technologies. I'm especially passionate about gameplay interaction systems programming, UX and UI design, and game development. I have a strong foundation in web development, gameplay programming, and software engineering principles.</p>
+        <p>I'm Theron Lindsay, I'm a senior at Boise State, studying Games,
+          Interactive Media, and Mobile Technologies.
+          I'm especially passionate about developing full-stack web applications,
+           UX and UI design, web-based and native mobile apps, and game development.
+           I have a strong foundation in web development, gameplay programming,
+           and software engineering principles.</p>
       </div>
-    </section>
+    </div>
     <!-- Skills Section -->
-    <section id="skills" class="skills-section content-section">
+    <div id="skills" class="skills-section content-section">
       <h2>Skills</h2>
       <div class="columns-container">
         
@@ -237,14 +242,73 @@
         </div>
 
       </div>
-    </section>
+    </div>
     
   </div> <!-- End hero-section -->
 
   <!-- Portfolio Section -->
-  <section id="portfolio" class="portfolio-section">
+  <div id="portfolio" class="portfolio-section">
     <h2>Portfolio</h2>
     <div class="portfolio-grid">
+
+            <!-- Project 5: Transparency Check -->
+      <div class="portfolio-card">
+        <div class="portfolio-card-header">
+           <img src="http://138.197.151.40:3000/Logo.png" 
+               alt="Transparency Check Logo" 
+               class="portfolio-card-image">
+          <a href="http://138.197.151.40:3000/" target="_blank">
+            <button class="link-button" aria-label="Open ">
+              <i class="fa-solid fa-play"></i>
+            </button>
+          </a>
+        </div>
+        <div class="portfolio-card-content">
+          <div class="portfolio-card-description">
+            <p>A tool to keep our government in Check. This web app hosts a mirror of the Congress API database, allowing users to search for bills and legislation, and see full bill texts, and information about sponsors. It features an AI summarization feature, allowing anyone to understand what's happening in our government.</p>
+          </div>
+          <div class="portfolio-card-technologies">
+            <span class="tech-tag">SQLite</span>
+            <span class="tech-tag">REST API</span>
+            <span class="tech-tag">Database Design</span>
+            <span class="tech-tag">OpenAI API</span>
+            <span class="tech-tag">HTML</span>
+            <span class="tech-tag">CSS</span>
+            <span class="tech-tag">JavaScript</span>
+            <span class="tech-tag">Svelte</span>
+            <span class="tech-tag">Node.Js</span>
+
+          </div>
+        </div>
+      </div>
+
+
+            <!-- Project 2: Charity: Water Game -->
+      <div class="portfolio-card">
+        <div class="portfolio-card-header">
+          <img class="fa-solid fa-droplet portfolio-card-icon" src="data:image/svg+xml,%3csvg%20fill='none'%20height='34'%20viewBox='0%200%2026%2034'%20width='26'%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%3e%3cclipPath%20id='a'%3e%3cpath%20d='m.513062%200h24.5777v34h-24.5777z'/%3e%3c/clipPath%3e%3cg%20clip-path='url(%23a)'%3e%3cpath%20d='m15.7682%2016.7009h-5.4839c-.49851%200-.89734.3988-.89734.8973v2.3432c0%20.4985.39883.8973.89734.8973h5.4839c.4985%200%20.8974-.3988.8974-.8973v-2.3432c0-.5483-.3989-.8973-.8974-.8973zm8.9237-12.26395c-.1495-.34897-1.1964-2.44281-1.1964-2.44281s.3988-.24927.5982-.34898c.1496-.04985.2991-.14956.0499-.648092-.2493-.498534-.5484-.348974-.5484-.348974s-.349.199413-.7478.398826c-.6481-.9472133-1.5455-1.04692-1.8446-1.04692-.1994%200-1.0968%200-1.346%200-.2493%200-.5484.0498534-.6481.199414-.0997.14956-.349.249266-.698.249266-.2991%200-9.22286%200-9.22286%200-.09971%200-.09971-.049853-.14956-.099706-.59824-.348974-1.29619%200-1.44575.14956s-.7478.897356-1.09677%201.246336c-.34897.39883-.64809.44868-.89736.54839.14956-.19942.04985-.39883.04985-.39883l-.09971-.19942.19942-.49853.14956-.09971-.09971-.249263s-.0997.049854-.29912.149561c-.19941.099702-.19941.149562-.19941.149562-.09971.34897-.29912.34897-.29912.34897s-.54839-.997066-.59824-1.096773c-.04986-.14956-.19942-.548387-1.99414.398827-1.794718.947216-1.346038%201.296186-1.346038%201.296186l.598238%201.14663-.19941.19941.44868.89736s-.09971.04986-.49853.29912c-.398832.24927-.797658.49854-.797658%201.19649v25.42525c0%201.8944.548388%202.7918%202.692078%202.7918h19.44286c1.2463%200%202.4428-.6481%202.4428-2.8417v-25.17594c0-1.24634-.2493-1.24634-.3989-1.59531zm-13.9589-2.09384h6.4809c.5484%200%20.9971.44868.9971.99707%200%20.54838-.4487.99706-.9971.99706h-6.4809c-.5484%200-.99706-.44868-.99706-.99706%200-.54839.44866-.99707.99706-.99707zm8.2258%2019.99119s2.1437%203.7889%202.6422%204.6364c.5983%201.1466-.1994%201.6451-.1994%201.6451s-1.0968.5484-1.6451-.4486c-.4487-.8475-1.9942-3.4898-2.4927-4.3373-.698-1.0469-.9971-1.4457-1.8944-1.4457-1.2464%200-.4487%200-2.1936%200h-.1495c-1.7449%200-.9473%200-2.2434%200-.94726%200-1.24638.3489-1.94433%201.4457-.54838.7977-2.04398%203.4898-2.54252%204.3373-.54838.997-1.64516.4486-1.64516.4486s-.84751-.4985-.19941-1.6451c.44868-.8475%202.64223-4.6364%202.64223-4.6364s.54838-.8475.54838-1.5454v-1.9443c0-.1994%200-.349%200-.349v-1.9443c0-.6979-.54838-1.5454-.54838-1.5454s-2.19355-3.7889-2.64223-4.6364c-.59824-1.14663.19941-1.64516.19941-1.64516s1.09678-.54839%201.64516.44868c.44868.84748%201.99414%203.48978%202.54252%204.33728.69795%201.0469.99707%201.3959%201.94433%201.3959h2.2434.1495%202.1936c.9472%200%201.1964-.349%201.8944-1.3959.5484-.7977%202.044-3.4898%202.4927-4.33728.5483-.99707%201.6451-.44868%201.6451-.44868s.7977.49853.1994%201.64516c-.4486.8475-2.6422%204.6364-2.6422%204.6364s-.5484.8475-.5484%201.5454v1.9443.349%201.9443c0%20.6979.5484%201.5454.5484%201.5454z'%20fill='%23ffca0a'/%3e%3c/g%3e%3c/svg%3e"/>
+          <h3>Where's my Charity:Water?</h3>
+          <a href="https://theronlindsay.dev/CharityWater" target="_blank">
+            <button class="link-button" aria-label="Play Game">
+              <i class="fa-solid fa-play"></i>
+            </button>
+          </a>
+        </div>
+        <div class="portfolio-card-content">
+          <div class="portfolio-card-description">
+            <p>A web game made for mobile and desktop, made with Unity to bring interaction to Charity:Water's cause.</p>
+          </div>
+          <div class="portfolio-card-technologies">
+            <span class="tech-tag">Unity</span>
+            <span class="tech-tag">C#</span>
+            <span class="tech-tag">Node.js</span>
+            <span class="tech-tag">HTML</span>
+            <span class="tech-tag">Game Design</span>
+            <span class="tech-tag">Singleplayer</span>
+            <span class="tech-tag">Responsive Design</span>
+          </div>
+        </div>
+      </div>
       
       <!-- Project 1: Upgrade Arena -->
       <div class="portfolio-card">
@@ -289,50 +353,16 @@
         </div>
       </div>
 
-      <!-- Project 2: Web Application -->
+      <!-- Project 3: War iOS game -->
       <div class="portfolio-card">
-        <div class="portfolio-card-header" data-video="https://www.youtube.com/embed/dQw4w9WgXcQ">
-          <i class="fa-solid fa-globe portfolio-card-icon"></i>
-          <h3>Web Application Project</h3>
-          <button class="video-toggle-btn" aria-label="Show demo video">
-            <i class="fa-solid fa-play"></i>
-          </button>
-        </div>
-        <div class="portfolio-card-content">
-          <div class="portfolio-card-description">
-            <p>A full-stack web application featuring modern UI design and robust backend functionality. Built with responsive design principles and user experience in mind.</p>
-          </div>
-          <div class="portfolio-card-technologies">
-            <span class="tech-tag">React</span>
-            <span class="tech-tag">Node.js</span>
-            <span class="tech-tag">CSS</span>
-            <span class="tech-tag">JavaScript</span>
-          </div>
-        </div>
-        <!-- Video Player Dropdown (Initially Hidden) -->
-        <div class="portfolio-video-dropdown">
-          <div class="video-player-container">
-            <iframe 
-              src="" 
-              frameborder="0" 
-              allowfullscreen
-              title="Web Application Demo Video">
-            </iframe>
-            <button class="video-close-btn" aria-label="Close video">
-              <i class="fa-solid fa-times"></i>
-            </button>
-          </div>
-        </div>
-      </div>
-      
-      <!-- Project 3: Mobile App -->
-      <div class="portfolio-card">
-        <div class="portfolio-card-header" data-video="https://www.youtube.com/embed/dQw4w9WgXcQ">
+        <div class="portfolio-card-header">
           <i class="fa-solid fa-mobile-screen-button portfolio-card-icon"></i>
-          <h3>iOS Mobile Application</h3>
-          <button class="video-toggle-btn" aria-label="Show demo video">
-            <i class="fa-solid fa-play"></i>
-          </button>
+          <h3>iOS War Card Game</h3>
+          <a href="https://github.com/theronlindsay/WariOS" target="_blank">
+            <button class="link-button" aria-label="Show demo video">
+              <i class="fa-solid fa-play"></i>
+            </button>
+          </a>
         </div>
         <div class="portfolio-card-content">
           <div class="portfolio-card-description">
@@ -344,135 +374,66 @@
             <span class="tech-tag">Xcode</span>
           </div>
         </div>
-        <!-- Video Player Dropdown (Initially Hidden) -->
-        <div class="portfolio-video-dropdown">
-          <div class="video-player-container">
-            <iframe 
-              src="" 
-              frameborder="0" 
-              allowfullscreen
-              title="iOS Mobile Application Demo Video">
-            </iframe>
-            <button class="video-close-btn" aria-label="Close video">
-              <i class="fa-solid fa-times"></i>
-            </button>
-          </div>
-        </div>
       </div>
       
-      <!-- Project 4: 3D Visualization -->
-      <div class="portfolio-card">
-        <div class="portfolio-card-header" data-video="https://www.youtube.com/embed/dQw4w9WgXcQ">
-          <i class="fa-solid fa-cube portfolio-card-icon"></i>
-          <h3>3D Visualization Tool</h3>
-          <button class="video-toggle-btn" aria-label="Show demo video">
-            <i class="fa-solid fa-play"></i>
-          </button>
-        </div>
-        <div class="portfolio-card-content">
-          <div class="portfolio-card-description">
-            <p>Interactive 3D visualization tool for data representation. Features custom shaders and materials for enhanced visual appeal and user interaction.</p>
-          </div>
-          <div class="portfolio-card-technologies">
-            <span class="tech-tag">Blender</span> 
-            <span class="tech-tag">3D Modeling</span>
-            <span class="tech-tag">Shader Programming</span>
-          </div>
-        </div>
-        <!-- Video Player Dropdown (Initially Hidden) -->
-        <div class="portfolio-video-dropdown">
-          <div class="video-player-container">
-            <iframe 
-              src="" 
-              frameborder="0" 
-              allowfullscreen
-              title="3D Visualization Tool Demo Video">
-            </iframe>
-            <button class="video-close-btn" aria-label="Close video">
-              <i class="fa-solid fa-times"></i>
-            </button>
-          </div>
-        </div>
-      </div>
-      
-      <!-- Project 5: Database System -->
+      <!-- Project 4: Tron Chat -->
       <div class="portfolio-card">
         <div class="portfolio-card-header">
-          <i class="fa-solid fa-database portfolio-card-icon"></i>
-          <h3>Database Management System</h3>
+          <i class="fa-solid fa-comment portfolio-card-icon"></i>
+          <h3>Tron Chat</h3>
+          <a href="https://theronlindsay.dev/Chat" target="_blank">
+            <button class="link-button" aria-label="Open ">
+              <i class="fa-solid fa-play"></i>
+            </button>
+          </a>
         </div>
         <div class="portfolio-card-content">
           <div class="portfolio-card-description">
-            <p>Comprehensive database management system with CRUD operations and API integration. Features user authentication and data security measures.</p>
+            <p>Web front end for Self-hosted AI models running on my own self-hosted Ollama Server. This allows me to use my own self-hosted models from anywhere.</p>
           </div>
           <div class="portfolio-card-technologies">
-            <span class="tech-tag">MySQL</span>
-            <span class="tech-tag">PHP</span>
-            <span class="tech-tag">REST API</span>
-            <span class="tech-tag">Database Design</span>
+            <span class="tech-tag">HTML</span> 
+            <span class="tech-tag">CSS</span>
+            <span class="tech-tag">JavaScript</span>
+            <span class="tech-tag">Svelte</span>
+            <span class="tech-tag">Ollama API</span>
+            <span class="tech-tag">Svelte</span>
+            <span class="tech-tag">Node.Js</span>
           </div>
         </div>
       </div>
+      
+
       
       <!-- Project 6: UI/UX Design Project -->
       <div class="portfolio-card">
         <div class="portfolio-card-header">
-          <i class="fa-solid fa-palette portfolio-card-icon"></i>
-          <h3>UI/UX Design Portfolio</h3>
+          <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fassets.stickpng.com%2Fimages%2F6099117a3ae4510004af4a1c.png&f=1&nofb=1&ipt=1a9f9bda5ac34826ef7563a05340e7c22afba1743ffcf29c7d64180814afba70" 
+               alt="Upgrade Arena Icon" 
+               class="portfolio-card-image">
+          <h3>L'Oreal AI Routine Builder</h3>
+          <a href="https://theronlindsay.dev/LorealRoutineBuilder/" target="_blank">
+            <button class="link-button" aria-label="Open ">
+              <i class="fa-solid fa-play"></i>
+            </button>
+          </a>
+          
         </div>
         <div class="portfolio-card-content">
           <div class="portfolio-card-description">
-            <p>User experience design project focusing on intuitive interface design and user-centered design principles. Includes prototyping and user testing.</p>
+            <p>This is a demo website that is not affiliated with L'Oreal. Includes a list of L'Oreal products as well as information about them. Users can select which products they would like to use, and my local Ollama AI will suggest a routine to use them together, as well as suggest other L'Oreal products. The user can then ask questions to the prompt-defined chatbot personality.</p>
           </div>
           <div class="portfolio-card-technologies">
-            <span class="tech-tag">Figma</span>
-            <span class="tech-tag">Prototyping</span>
-            <span class="tech-tag">User Testing</span>
-            <span class="tech-tag">Design Systems</span>
-          </div>
-        </div>
-      </div>
-      
-      <!-- Project 7: Game Development Tool -->
-      <div class="portfolio-card">
-        <div class="portfolio-card-header">
-          <i class="fa-solid fa-gamepad portfolio-card-icon"></i>
-          <h3>Game Development Tool</h3>
-        </div>
-        <div class="portfolio-card-content">
-          <div class="portfolio-card-description">
-            <p>Custom tool for game developers featuring automated workflows and enhanced productivity features. Built to streamline the game development process.</p>
-          </div>
-          <div class="portfolio-card-technologies">
-            <span class="tech-tag">C#</span>
-            <span class="tech-tag">Unity</span>
-            <span class="tech-tag">Tool Development</span>
-            <span class="tech-tag">Automation</span>
-          </div>
-        </div>
-      </div>
-      
-      <!-- Project 8: Shader Collection -->
-      <div class="portfolio-card">
-        <div class="portfolio-card-header">
-          <i class="fa-solid fa-compass-drafting portfolio-card-icon"></i>
-          <h3>Shader Collection</h3>
-        </div>
-        <div class="portfolio-card-content">
-          <div class="portfolio-card-description">
-            <p>Collection of custom shaders and materials for enhanced visual effects in games and applications. Features various lighting and texture techniques.</p>
-          </div>
-          <div class="portfolio-card-technologies">
-            <span class="tech-tag">Shader Graph</span>
-            <span class="tech-tag">HLSL</span>
-            <span class="tech-tag">Material Design</span>
-            <span class="tech-tag">Visual Effects</span>
+            <span class="tech-tag">HTML</span>
+            <span class="tech-tag">CSS</span>
+            <span class="tech-tag">JavaScript</span>
+            <span class="tech-tag">Ollama API</span>
           </div>
         </div>
       </div>
       
     </div>
-  </section>
+  </div>
 
   <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>

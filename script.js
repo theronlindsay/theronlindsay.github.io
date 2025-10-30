@@ -70,6 +70,7 @@ const videoCloseBtns = document.querySelectorAll('.video-close-btn');
 
 videoToggleBtns.forEach(btn => {
   btn.addEventListener('click', (e) => {
+    e.preventDefault(); // Prevent default behavior
     e.stopPropagation(); // Prevent event bubbling
     
     const portfolioCard = btn.closest('.portfolio-card');
@@ -102,11 +103,12 @@ videoToggleBtns.forEach(btn => {
       btn.classList.add('active');
       iframe.src = videoUrl; // Load video
     }
-  });
+  }, { passive: false }); // Non-passive since we need preventDefault
 });
 
 videoCloseBtns.forEach(btn => {
   btn.addEventListener('click', (e) => {
+    e.preventDefault(); // Prevent default behavior
     e.stopPropagation(); // Prevent event bubbling
     
     const portfolioCard = btn.closest('.portfolio-card');
@@ -118,19 +120,20 @@ videoCloseBtns.forEach(btn => {
     dropdown.classList.remove('active');
     toggleBtn.classList.remove('active');
     iframe.src = ''; // Stop video by clearing src
-  });
+  }, { passive: false }); // Non-passive since we need preventDefault
 });
 
 // Close video dropdowns when clicking outside
 document.addEventListener('click', (e) => {
-  if (!e.target.closest('.portfolio-card')) {
+  // Only handle clicks, not scroll events or other pointer events
+  if (e.type === 'click' && !e.target.closest('.portfolio-card')) {
     document.querySelectorAll('.portfolio-video-dropdown.active').forEach(dropdown => {
       dropdown.classList.remove('active');
       dropdown.closest('.portfolio-card').querySelector('.video-toggle-btn').classList.remove('active');
       dropdown.querySelector('iframe').src = '';
     });
   }
-});
+}, { passive: true }); // Use passive event listener to not block scrolling
 
 // Close video dropdowns when pressing Escape key
 document.addEventListener('keydown', (e) => {
