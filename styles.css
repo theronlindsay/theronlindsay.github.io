@@ -10,6 +10,10 @@ html, body {
   overflow-x: hidden;
 }
 
+a {
+  text-decoration: none;
+}
+
 body {
     min-height: 100vh; /* Ensure body takes at least full viewport height */
     min-width: 100vw;
@@ -456,6 +460,7 @@ border: 1px solid rgba(255, 255, 255, 0.3);
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   position: relative;
   border-radius: 10px 10px 0 0;
+  justify-content: space-between;
 }
 
 .video-toggle-btn {
@@ -486,6 +491,20 @@ border: 1px solid rgba(255, 255, 255, 0.3);
   font-size: 0.9rem;
 }
 
+.link-button {
+  background: rgba(127, 255, 212, 0.2);
+  border: 1px solid #7fffd4;
+  border-radius: 50%;
+  width: 1em;
+  height: 3em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #7fffd4;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
 .portfolio-card-icon {
   font-size: 2rem;
   margin-right: 1rem;
@@ -501,7 +520,7 @@ border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 8px;
   object-fit: cover;
   margin-right: 1rem;
-  width: 9em;
+  width: 100px;
 }
 
 .portfolio-card h3 {
