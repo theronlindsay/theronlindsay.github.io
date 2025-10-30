@@ -683,9 +683,7 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 /* Responsive adjustments for content sections */
 @media screen and (min-width: 900px) {
 
-  .hero-section {
-    padding: 0 2rem;
-  }  .content-section {
+  .content-section {
     /* margin: 5em 8em; */
     border-radius: 25px;
     padding: 2rem 1.5rem;
