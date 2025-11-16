@@ -133,7 +133,7 @@ body {
   }
 
   .nav-menu.active {
-    left: 50%;
+    left: 20%;
     transform: translateX(-50%);
     opacity: 1;
     visibility: visible;
@@ -788,7 +788,7 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .bio-image {
-  max-width: 30em;
+  max-width: 90vw;
   max-height: 30em;
   border-radius: 10%;
   object-fit: cover;
