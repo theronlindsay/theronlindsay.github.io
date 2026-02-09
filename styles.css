@@ -16,7 +16,6 @@ a {
 
 body {
     min-height: 100vh; /* Ensure body takes at least full viewport height */
-    min-width: 100vw;
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     background:url('https://p7h2gynp3b.ufs.sh/f/QwfPGNjwO1pr8uqjp0h2EDzBhpeb5C6ZtJNq4YRwKj7cuQAf') no-repeat center center fixed;  
@@ -58,8 +57,8 @@ body {
     display: flex;
     justify-content: space-between;
     height: 60px;
-    width: 100vw;
-    max-width: 100vw;
+  width: 100%;
+  max-width: 100%;
     margin: 0 auto;
     padding: 0 50px;
 }
@@ -275,7 +274,8 @@ button:hover {
   padding: 4rem 2rem;
   text-align: center;
   max-width: 1300px;
-  margin: 2rem 1rem; /* Increased margin for better section separation */
+  max-width: 100vw;
+  /* margin: 2rem 1rem; Increased margin for better section separation */
   min-height: auto; /* Remove fixed height to prevent magnetism */
   backdrop-filter: blur(5px);
 -webkit-backdrop-filter: blur(5px);
@@ -398,6 +398,46 @@ border: 1px solid rgba(255, 255, 255, 0.3);
   margin-bottom: 1rem;
 }
 
+/* Mobile centering and overflow fixes */
+@media screen and (max-width: 600px) {
+  /* html, body {
+    overflow-x: hidden; /* ensure no horizontal scrolling */
+  } */
+
+  body {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  .navbar {
+    left: 10px;
+    right: 10px;
+  }
+
+  .navbar-container {
+    padding: 0 12px;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .container,
+  .content-section,
+  .hero-section {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-align: center;
+  }
+
+  .columns-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 .skill-description p {
   margin: 0;
   font-size: 0.95rem;
@@ -455,7 +495,7 @@ border: 1px solid rgba(255, 255, 255, 0.3);
   display: flex;
   flex-direction: column;
   flex: 1;
-  min-width: 300px;
+  min-width: 200px;
   max-width: 350px;
 }
 
@@ -467,7 +507,7 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 .education-card-header {
   display: flex;
   align-items: center;
-  padding: 1rem 1.25rem;
+  padding: 1rem 0rem;
   background: rgba(255, 255, 255, 0.05);
   cursor: pointer;
   transition: all 0.3s ease;
@@ -842,10 +882,10 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 
   .education-container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     gap: 2rem;
     justify-content: center;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
   }
 
   .bio-container {
@@ -863,7 +903,7 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 
 }
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 1079px) {
 
   .hero-section {
     flex-direction: column;
@@ -920,6 +960,8 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 
   .horizontal-layout {
     flex-direction: column;
+    align-self: center;
+    max-width: 90vw;
   }
 
 }
@@ -952,4 +994,6 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 
 .horizontal-layout {
   display: flex;
+  max-width: 85vw;
+  align-self: center;
 }

@@ -22,21 +22,23 @@ to {
 }
 }
 
-.html:before,
-html:after {
+body:before,
+body:after {
     display: block;
     pointer-events: none;
     content: "";
-    position: absolute;
+    position: fixed;
 }
-html:before {
-    width: 100%;
+body:before {
+    top: 0;
+    left: 0;
+    width: 100vw;
     height: 2px;
     z-index: 2147483649;
     opacity: 0.75;
     animation: scanline 6s linear infinite;
 }
-html:after {
+body:after {
     top: 0;
     right: 0;
     bottom: 0;
@@ -66,18 +68,10 @@ div {
     margin: 0;
     padding: 0;
 }
-divhtml {
-    position: absolute;
-}
 div .jpg {
     width: 100vw;
     height: 100vh;
     border: none;
-}
-.jpg {
-    background: url("https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Philips_PM5544.svg/800px-Philips_PM5544.svg.png")
-        no-repeat;
-    background-size: cover;
 }
 body {
     position: relative;
